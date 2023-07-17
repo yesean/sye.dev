@@ -25,7 +25,7 @@ export default ({ currentPath }: Props) => {
           <li
             key={name}
             className={`hover:text-sky-500 ${
-              href === currentPath ? "text-sky-500" : ""
+              href === currentPath ? "font-bold text-sky-500" : ""
             }`}
           >
             <a href={href}>{name}</a>
