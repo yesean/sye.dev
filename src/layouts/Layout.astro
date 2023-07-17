@@ -1,0 +1,29 @@
+---
+import "@fontsource/poppins";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+const { pathname } = Astro.url;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Sean Ye" />
+    <meta name="description" content="Sean Ye" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <div class="h-screen flex flex-col">
+      <Header currentPath={pathname} client:load />
+      <main class="flex-1">
+        <slot />
+      </main>
+      <Footer />
+      <div></div>
+    </div>
+  </body>
+</html>
