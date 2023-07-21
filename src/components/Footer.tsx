@@ -24,7 +24,7 @@ export default () => (
   <footer className="p-3">
     <ol className="m-auto flex max-w-3xl justify-evenly">
       {data.map(({ name, href, icon }) => (
-        <li className="box-border rounded-md p-2 hover:bg-slate-200">
+        <li key={name} className="box-border rounded-md p-2 hover:bg-slate-200">
           <a target="_blank" href={href}>
             <img src={icon} alt={name} />
           </a>
