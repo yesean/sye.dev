@@ -3,7 +3,7 @@ export default () => (
     <ul className="list-disc">
       <li>front end engineer @ meta</li>
       <li>ucsd '23</li>
-      <li>i use arch btw</li>
+      <li>daily v60 enthusiast</li>
     </ul>
   </div>
 );
