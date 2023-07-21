@@ -25,8 +25,8 @@ export default ({ currentPath }: Props) => {
         {data.map(({ name, href }) => (
           <li
             key={name}
-            className={`hover:text-sky-500 ${
-              href === currentPath ? "font-bold text-sky-500" : ""
+            className={`font-bold hover:text-sky-500 ${
+              href === currentPath ? "text-sky-500" : ""
             }`}
           >
             <a href={href}>{name}</a>
