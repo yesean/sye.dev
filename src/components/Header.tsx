@@ -5,11 +5,11 @@ const data = [
   },
   {
     name: "work",
-    href: "/work",
+    href: "/work/",
   },
   {
     name: "about",
-    href: "/about",
+    href: "/about/",
   },
 ];
 
@@ -18,6 +18,7 @@ type Props = {
 };
 
 export default ({ currentPath }: Props) => {
+  console.log({ currentPath });
   return (
     <nav className="flex w-full justify-end p-3">
       <ol className="flex max-w-sm flex-1 justify-around ">
