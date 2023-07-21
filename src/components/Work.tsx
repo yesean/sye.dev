@@ -1,4 +1,3 @@
-import code from "../assets/code.svg";
 import githubSquare from "../assets/github-square.svg";
 
 const data = [
